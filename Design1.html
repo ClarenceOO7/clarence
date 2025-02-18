@@ -1,31 +1,162 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-My first Design
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 240px;
+            background-color: #121212;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h1 {
+            color: #1DB954;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #B3B3B3;
+            font-size: 18px;
+        }
+
+        .sidebar ul li a:hover {
+            color: white;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .header h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .album {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .album p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #B3B3B3;
+        }
+
+        .album h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .footer {
+            background-color: #121212;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            color: #B3B3B3;
+        }
+    </style>
 </head>
+<body>
 
-<body background="
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1>Spotify</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Your Library</a></li>
+        </ul>
+    </div>
 
-<h1 align="center"><font><SIARGAO ISLAND INSTITUTE OF TECHNOLOGY </font> </h1>
-<h2 align="center"> <font >face="arial black"> Dapa, Surigao Del Norte </font></h2>
-<h3 align="center"> <font >face="times new roman">PROGRAM OFFERED </font></h3>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <h2>Welcome to Spotify</h2>
+            <button style="background-color: #1DB954; padding: 10px 20px; border: none; color: white; border-radius: 4px;">Log In</button>
+        </div>
 
-<p align="center"> <font face="arial" color="white" size="4">
-This qualitative study examined the impact of <br><br>
-east Tennessee service-industry small businesses.<br>
-Interviews with 23 businesses revealed a <br>
-high importance placed on <br>
-strategic planning, particularly in <br>
-navigating post-pandemic challenges <br>
-</p>
-
-
-
-<marquee direction="left">
-<h3> Prepared by: Mae Dulgiume </h3>
+        <div class="music-grid">
+            <div class="album">
+                <img src="https://via.placeholder.com/200x200" alt="Album 1">
+                <h3>Album Name 1</h3>
+                <p>Artist Name</p>
+            </div>
+            <div class="album">
+                <img src="https://via.placeholder.com/200x200" alt="Album 2">
+                <h3>Album Name 2</h3>
+                <p>Artist Name</p>
+            </div>
+            <div class="album">
+                <img src="https://via.placeholder.com/200x200" alt="Album 3">
+                <h3>Album Name 3</h3>
+                <p>Artist Name</p>
+            </div>
+            <div class="album">
+                <img src="https://via.placeholder.com/200x200" alt="Album 4">
+                <h3>Album Name 4</h3>
+                <p>Artist Name</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
-
 </html>
